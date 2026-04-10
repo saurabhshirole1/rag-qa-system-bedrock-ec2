@@ -1,0 +1,31 @@
+# ============================================================
+# FILE: .streamlit/config.toml
+# PURPOSE: Configures how the Streamlit app looks and behaves.
+#          Streamlit reads this file automatically on startup.
+# ============================================================
+
+[theme]
+# primaryColor = the main accent color (buttons, sliders, etc.)
+primaryColor = "#FF6B35"
+
+# backgroundColor = the main page background color
+backgroundColor = "#FFFFFF"
+
+# secondaryBackgroundColor = sidebar and input box background
+secondaryBackgroundColor = "#F0F2F6"
+
+# textColor = all text in the app
+textColor = "#262730"
+
+[server]
+# port = which port the Streamlit app listens on
+# 8501 is Streamlit's default — make sure this port is open in EC2
+port = 8501
+
+# headless = run without opening a browser automatically
+# Set to true on servers (EC2) — there is no browser on a server
+headless = true
+
+# enableCORS = Cross-Origin Resource Sharing
+# Set to false for simplicity; set to true if calling from other domains
+enableCORS = true
