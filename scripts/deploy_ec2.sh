@@ -1,10 +1,4 @@
-#!/bin/bash
-# ============================================================
-# FILE: scripts/deploy_ec2.sh
-# PURPOSE: Shell script to set up your EC2 server and deploy
-#          the Streamlit app. Run these commands on the EC2 instance
-#          after SSH-ing in.
-#
+
 # HOW TO USE:
 # 1. SSH into EC2: ssh -i key.pem ec2-user@YOUR_IP
 # 2. Run: bash deploy_ec2.sh
