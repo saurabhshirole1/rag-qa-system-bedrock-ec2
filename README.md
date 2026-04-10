@@ -114,6 +114,7 @@ enterprise-rag-system/
 ---
 
 ## Architecture Diagram
+```
 ┌─────────────┐        Question         ┌──────────────────┐
 │    User     │ ─────────────────────▶ │  Streamlit App   │
 │  (Browser)  │                        │   (EC2 Server)   │
@@ -133,7 +134,7 @@ enterprise-rag-system/
              │  (Documents) │      │  Serverless  │      │    Lite      │
              └──────────────┘      │  (Vectors)   │      │  (Answer)    │
                                    └──────────────┘      └──────────────┘
-
+```
 ---
 
 ## Prerequisites
