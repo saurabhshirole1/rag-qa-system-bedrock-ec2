@@ -114,28 +114,25 @@ enterprise-rag-system/
 ---
 
 ## Architecture Diagram
-
-```
-┌─────────────┐     Question      ┌──────────────────┐
-│    User     │ ───────────────▶  │  Streamlit App   │
-│  (Browser)  │                   │   (EC2 Server)   │
-└─────────────┘ ◀─────────────── └────────┬─────────┘
-                    Answer                 │
-                  + Citations              │ boto3 API call
-                                          ▼
-                                ┌──────────────────────┐
-                                │   Amazon Bedrock     │
-                                │   Knowledge Base     │
-                                └────────┬─────────────┘
-                                         │
-                          ┌──────────────┼──────────────┐
-                          ▼              ▼              ▼
-                   ┌──────────┐  ┌────────────┐  ┌──────────────┐
-                   │  Amazon  │  │  OpenSearch│  │  Amazon      │
-                   │   S3     │  │  Serverless│  │  Nova Lite   │
-                   │(Documents)│  │ (Vectors)  │  │   (Answer)   │
-                   └──────────┘  └────────────┘  └──────────────┘
-```
+┌─────────────┐        Question         ┌──────────────────┐
+│    User     │ ─────────────────────▶ │  Streamlit App   │
+│  (Browser)  │                        │   (EC2 Server)   │
+└─────────────┘ ◀───────────────────── └────────┬─────────┘
+                        Answer + Citations      │
+                                               │ boto3 API call
+                                               ▼
+                                   ┌──────────────────────┐
+                                   │   Amazon Bedrock     │
+                                   │   Knowledge Base     │
+                                   └────────┬─────────────┘
+                                            │
+                     ┌──────────────────────┼──────────────────────┐
+                     ▼                      ▼                      ▼
+             ┌──────────────┐      ┌──────────────┐      ┌──────────────┐
+             │   Amazon S3  │      │ OpenSearch   │      │ Amazon Nova  │
+             │  (Documents) │      │  Serverless  │      │    Lite      │
+             └──────────────┘      │  (Vectors)   │      │  (Answer)    │
+                                   └──────────────┘      └──────────────┘
 
 ---
 
