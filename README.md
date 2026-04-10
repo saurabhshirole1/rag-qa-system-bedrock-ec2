@@ -471,11 +471,11 @@ What is the work from home policy?
               └─────────────────────┴──────────────────────┘
                                     │
                     ┌───────────────▼─────────────────┐
-                    │    App is LIVE at EC2_IP:8501    │
+                    │    App is LIVE at EC2_IP:8501   │
                     └───────────────┬─────────────────┘
                                     │
-                    ┌───────────────▼─────────────────┐
-                    │      EVERY USER QUESTION        │
+                    ┌───────────────▼──────────────────┐
+                    │      EVERY USER QUESTION         │
                     │                                  │
                     │  User types question in browser  │
                     │           ↓                      │
@@ -492,15 +492,15 @@ What is the work from home policy?
                                     │
                     ┌───────────────▼─────────────────┐
                     │    ADDING NEW DOCUMENTS         │
-                    │                                  │
-                    │  Upload file to S3               │
-                    │           ↓                      │
-                    │  Click Sync in Bedrock console   │
-                    │           ↓                      │
-                    │  Wait for "Completed"            │
-                    │           ↓                      │
-                    │  New doc is searchable           │
-                    └──────────────────────────────────┘
+                    │                                 │
+                    │  Upload file to S3              │
+                    │           ↓                     │
+                    │  Click Sync in Bedrock console  │
+                    │           ↓                     │
+                    │  Wait for "Completed"           │
+                    │           ↓                     │
+                    │  New doc is searchable          │
+                    └─────────────────────────────────┘
 ```
 
 ---
