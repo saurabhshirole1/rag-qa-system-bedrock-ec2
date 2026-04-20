@@ -1,5 +1,6 @@
 # Enterprise Knowledge Base Q&A System
 ### RAG Implementation using Amazon Bedrock
+### Live Link of APP : http://52.72.170.204:8501/
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.32.0-red.svg)
